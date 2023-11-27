@@ -1,0 +1,62 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background-image: url("./김승환_메인/Image/메인이미지.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.container{
+    color: white;
+    font-size: 50px;
+    margin-top: 80px;
+    margin-left: 90px;
+}
+
+p{
+  font-family:"Montserrat",sans-serif;
+}
+
+.p_regular{
+  font-weight:400;
+}
+
+.p_medium{
+  font-weight: 500;
+}
+
+.p_bold{
+  font-weight: 700;
+}
+
+.nav{
+    text-align: center;
+
+    width: 100%;
+
+    color: white;
+    position: fixed;
+    background-color : rgb(255,255,255,0.5);  
+    bottom: 0px;
+    display: inline-block;
+
+    font-size: 60px;
+}
+
+
+ul {
+    list-style:none;
+    margin:0;
+    padding:0;
+}
+
+li {
+    margin: 0 70px 0 70px;
+    padding: 0 0 0 0;
+    border : 0;
+    float: left;
+}
