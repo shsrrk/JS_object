@@ -1,0 +1,52 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background-image: url("./김승환_메인/Image/청학_메인\ 이미지\(블러\).jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    overflow-x: hidden
+}
+
+.nav{
+    text-align: center;
+
+    width: 100%;
+
+    color: white;
+    position: block;
+    background-color : rgb(255,255,255,0.5);  
+    top: 0px;
+    display: inline-block;
+
+    font-size: 60px;
+}
+
+
+ul {
+    list-style:none;
+    margin:0;
+    padding:0;
+}
+
+li {
+    margin: 0 70px 0 70px;
+    padding: 0 0 0 0;
+    border : 0;
+    float: left;
+}
+
+.li_b{
+  margin: 0 20px 0 30px;
+}
+
+.container{
+    position: relative;
+    margin: 10% auto;
+    top: 50%;
+    left: 30%;
+    right: 30%;
+}

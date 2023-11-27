@@ -6,34 +6,69 @@
     <title>Document</title>
     <link rel="stylesheet" href="./타이틀.css">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet" />
+
 </head>
 <body>
-    <div class="container">
+    <div style="z-index: 1; position: fixed;" class="scroll-section">
+        <img src="./김승환_메인/Image/메인이미지.jpg" width="100%" height="1000px">
+    </div>
+
+    <div class="container" style="z-index: 100;">
         <span class="p_bold"style="font-size: 150px; margin-top: 10px; display: block;">청운:靑雲</span>
-        <span style="position: relative; height: 30%; text-align: 10px;">Chungwoon</span>
-        <span style="font-size: 30px; display: block; margin-top: 10px;">
+        <span style="display: block; height: 30%; margin: 50px 0 0 20px;">Chungwoon</span>
+        <span style="font-size: 30px; display: block; margin: 25px 0 0 30px;">
             푸른색은 믿음과 신뢰를 상징하는 색입니다.<br>
             그리고 바다와 하늘 같은 무한함을 나타내는 색이기도 합니다.<br>
             저희 청운은 여러분의 무한한 가능성을 응원합니다.<br>
         </span>
-        <span style="font-size: 30px; display: block; margin-top: 10px;">
+        <span style="font-size: 30px; display: block; margin: 20px 0 0 30px;">
             Blue is a color that symbolizes faith and trust.<br>
             And it's also a color that represents infinity, like the ocean and the sky.<br>
             We, chungwoon, support your infinite possibilities.<br>
         </span>
+
+        <button id="scrollButton">아래로 스크롤</button>
+
     </div>
     <div class="nav">
-
         <div class="click">
             <ul>
-                <li>chungwoon</li>
-                <li>청운</li>
-                <li>청학</li>
-                <li>CM</li>
-                <li>FAQ</li>
+                <li style="float: left; margin-left: 7%; font-weight: 1000;">chungwoon</li>
+                <div style="margin-left: 43%">
+                    <li class="li_b">청운</li>
+                    <li class="li_b">청학</li>
+                    <li class="li_b">CM</li>
+                    <li class="li_b">FAQ</li>
+                </div>
             </ul>
         </div>
     </div>
+
+    <div style="z-index: 1; position: fixed;" class="scroll-section">
+        <img src="./김승환_메인/Image/청학_메인 이미지(블러).jpg" width="100%" height="1000px">
+    </div>
+
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            // 버튼 클릭 시 스크롤 기능 호출
+            document.getElementById('scrollButton').addEventListener('click', function () {
+                scrollToSection('section2'); // 스크롤될 섹션의 ID를 전달
+            });
+        });
+
+        // 스크롤 함수
+        function scrollToSection(sectionId) {
+            const section = document.getElementById(sectionId);
+            if (section) {
+                // 섹션의 위치로 스크롤
+                window.scrollTo({
+                    top: section.offsetTop,
+                    behavior: 'smooth' // 부드러운 스크롤 효과
+                });
+            }
+        }
+    </script>
 
     
 

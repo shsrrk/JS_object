@@ -3,14 +3,9 @@
     padding: 0px;
 }
 
-body {
-    background-image: url("./김승환_메인/Image/메인이미지.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-}
 
 .container{
+    position: sticky;
     color: white;
     font-size: 50px;
     margin-top: 80px;
@@ -35,11 +30,12 @@ p{
 
 .nav{
     text-align: center;
+    z-index: 200;
 
     width: 100%;
 
     color: white;
-    position: fixed;
+    position: absolute;
     background-color : rgb(255,255,255,0.5);  
     bottom: 0px;
     display: inline-block;
@@ -59,4 +55,28 @@ li {
     padding: 0 0 0 0;
     border : 0;
     float: left;
+}
+
+.li_b{
+  margin: 0 20px 0 30px;
+}
+
+
+.scroll-section {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+}
+
+#scrollButton {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  padding: 10px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  cursor: pointer;
 }
